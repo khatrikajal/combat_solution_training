@@ -6,7 +6,7 @@ combat_solution_training/
 │
 ├── azure_openapi/      # Task 1: Azure OpenAI basics & API integration
 │   ├── .env
-│   ├── call_azureOpenAPI.py
+│   ├── azureOpenai_call.py
 │
 ├── langchain/          # Task 2: LangChain basics
 │   ├── .env
@@ -17,7 +17,8 @@ combat_solution_training/
 │   ├── azureopenai_langgraph.py
 │
 ├── dag/                # Task 5: DAG implementation with LangGraph
-│   ├── ...
+│   ├── .env
+|   ├── app.py
 │
 ├── Dockerfile          # Task 4: Containerization langgraph only 
 ├── docker-compose.yml

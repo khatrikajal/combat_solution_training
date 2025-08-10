@@ -19,7 +19,6 @@ client = AzureOpenAI(
     api_version="2025-01-01-preview",
 )
 
-# Prepare the chat prompt
 chat_prompt = [
     {
         "role": "user",
