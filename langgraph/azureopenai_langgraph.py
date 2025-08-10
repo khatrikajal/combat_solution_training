@@ -14,7 +14,6 @@ deployment = os.getenv("DEPLOYMENT_NAME")
 api_key = os.getenv("AZURE_OPENAI_API_KEY")
 api_version = os.getenv("API_VERSION", "2025-01-01-preview")  # default if not in .env
 
-
 client = AzureOpenAI(
     azure_endpoint=endpoint,
     api_key=api_key,
@@ -59,7 +58,7 @@ def chatbot_node(state: MessagesState):
 
 memory = MemorySaver()
 
-
+# Define the state graph with the chatbot node
 graph_builder = StateGraph(MessagesState)
 graph_builder.add_node("chatbot", chatbot_node)
 graph_builder.add_edge(START, "chatbot")
