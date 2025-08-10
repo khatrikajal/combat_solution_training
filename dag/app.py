@@ -9,7 +9,7 @@ load_dotenv()
 
 API_KEY = os.getenv("API_KEY")
 
-# Initialize the LLM
+
 llm = ChatOpenAI(
     openai_api_base="https://openrouter.ai/api/v1",
     openai_api_key=API_KEY,
@@ -17,7 +17,7 @@ llm = ChatOpenAI(
     temperature=0.7,
 )
 
-# Initialize the calculator tool
+
 calculator_tool = PythonREPLTool()
 
 def preprocess_calc_input(text: str) -> str:
@@ -25,7 +25,7 @@ def preprocess_calc_input(text: str) -> str:
     text = text.lower()
     for phrase in ["calculate", "what is", "solve", "evaluate"]:
         text = text.replace(phrase, "")
-    # Remove extra spaces
+   
     return text.strip()
 
 def is_calculation_query(text: str) -> bool:
@@ -49,7 +49,7 @@ if st.button("Run"):
         if route == "calc":
             try:
                 expression = preprocess_calc_input(user_input)
-                # Wrap in print() to get output from PythonREPLTool
+                
                 if not expression.startswith("print("):
                     expression = f"print({expression})"
                 output = calculator_tool.run(expression)
