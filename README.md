@@ -4,7 +4,7 @@
 ```
 combat_solution_training/
 │
-├── azure_openapi/      # Task 1: Azure OpenAI basics & API integration
+├── azure_openai/      # Task 1: Azure OpenAI basics & API integration
 │   ├── .env
 │   ├── azureOpenai_call.py
 │
@@ -31,7 +31,7 @@ combat_solution_training/
 ## Task Details
 
 ### **Task 1 – Learn Azure OpenAI Basics**  
-**Folder:** `azure_openapi/`  
+**Folder:** `azure_openai/`  
 **Objectives:**
 - Understand Azure OpenAI vs OpenAI.com
 - Access models via Azure portal
@@ -42,7 +42,7 @@ combat_solution_training/
 **Deliverables:**
 - Azure OpenAI resource created
 - Playground prompt tested
-- `call_azureOpenAPI.py` to call Azure GPT-3.5 API using key & endpoint
+- `azureOpenai_call.py` to call Azure GPT-3.5 API using key & endpoint
 
 ---
 
