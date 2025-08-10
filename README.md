@@ -1,6 +1,6 @@
 # Combat Solution Training – Azure OpenAI + LangChain + LangGraph + Docker + DAG
 
-## 📂 Project Structure
+##  Project Structure
 ```
 combat_solution_training/
 │
@@ -27,7 +27,7 @@ combat_solution_training/
 
 ---
 
-## 📝 Task Details
+## Task Details
 
 ### **Task 1 – Learn Azure OpenAI Basics**  
 **Folder:** `azure_openapi/`  
@@ -102,7 +102,7 @@ combat_solution_training/
 
 ---
 
-## ⚙️ Environment Variables
+## Environment Variables
 Each task folder contains its own `.env` file:
 ```env
 ENDPOINT_URL=https://<your-resource-name>.openai.azure.com/
@@ -112,7 +112,7 @@ AZURE_OPENAI_API_KEY=<your-api-key>
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 ### Local (Python)
 ```bash
 pip install -r requirements.txt
@@ -128,7 +128,7 @@ Visit: [http://localhost:8501](http://localhost:8501)
 
 ---
 
-## 📖 Learning Goals
+##  Learning Goals
 - **Azure OpenAI**: Deploy & call GPT models from Azure portal  
 - **LangChain**: Build LLM chains with memory  
 - **LangGraph**: Create multi-node conversational flows  
