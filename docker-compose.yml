@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  azure-langgraph-chatbot:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file:
+      - langgraph/.env  
+    environment:
+      - STREAMLIT_DISABLE_BROWSER=true
+    restart: unless-stopped
