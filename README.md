@@ -116,12 +116,25 @@ AZURE_OPENAI_API_KEY=<your-api-key>
 ### Local (Python)
 ```bash
 pip install -r requirements.txt
-cd langgraph
-python azureopenai_langgraph.py
+
+# for azure_apenai
+python azureOpenai_call.py
+
+# for langchain
+cd langchain
+streamlit run langchain_model.py
+
+# for dag 
+cd dag
+streamlit run app.py
+
+
 ```
 
 ### Docker
 ```bash
+# for langgraph
+
 docker-compose up --build
 ```
 Visit: [http://localhost:8501](http://localhost:8501)
