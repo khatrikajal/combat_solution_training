@@ -13,6 +13,8 @@ COPY . .
 
 EXPOSE 8501
 
+
 ENV STREAMLIT_DISABLE_BROWSER=true
 
+# Start the Streamlit app
 CMD ["streamlit", "run", "langgraph/azureopenai_langgraph.py", "--server.address=0.0.0.0", "--server.port=8501"]
