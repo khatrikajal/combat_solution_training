@@ -1,4 +1,3 @@
-# langchain_gpt_oss_ui.py
 import os
 from dotenv import load_dotenv
 import streamlit as st
@@ -13,14 +12,12 @@ MODEL = "mistralai/mistral-7b-instruct:free"
 API_KEY = os.getenv("API_KEY") 
 
 
-
 llm = ChatOpenAI(
     openai_api_base="https://openrouter.ai/api/v1",
     openai_api_key=API_KEY,
     model_name=MODEL,
     temperature=0.7
 )
-
 
 prompt = PromptTemplate(
     input_variables=["history", "input"],
@@ -31,7 +28,6 @@ prompt = PromptTemplate(
     User: {input}
     AI:"""
 )
-
 
 if "memory" not in st.session_state:
     st.session_state.memory = ConversationBufferMemory(memory_key="history")
